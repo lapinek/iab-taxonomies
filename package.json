@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/lapinek/iab-taxonomies/issues"
   },
-  "homepage": "https://github.com/lapinek/iab-taxonomies#readme"
+  "homepage": "https://github.com/lapinek/iab-taxonomies#readme",
+  "dependencies": {
+    "csv-parse": "^5.5.3",
+    "octokit": "^3.1.2"
+  },
+  "type": "module"
 }
