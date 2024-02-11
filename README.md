@@ -2,37 +2,56 @@
 
 The [IAB Taxonomies](https://github.com/InteractiveAdvertisingBureau/Taxonomies/) are a set of categories and subcategories for use in advertising. These standards developed by the [IAB Tech Lab](https://iabtechlab.com/standards/) are intended to be used by publishers, ad networks, and other advertisers and marketers to help them understand the types of content and targeting. The standards serve as a foundation for the safe and effective advertising practices.
 
-This repository provides a script with which you can monitor changes in the IAB Taxonomy data, and serves as a primer for downloading the updates and converting the taxonomy data into a JSON format.
+This package can help you monitor changes in IAB Taxonomy data by downloading the data and converting it into a JSON format. 
 
 ## Usage
 
-1. Clone this repository.
+1. Install the package:
 
     ```sh
-    git clone https://github.com/lapinek/iab-taxonomies.git
+    npm install iab-taxonomies
     ```
 
-1. Navigate to the root folder.
+1. Import the `get` function from the package and use it to download the data.
 
-    ```sh
-    cd iab-taxonomies
+    ```javascript
+    import { get as getIabTaxonomies } from 'iab-taxonomies';
+    import fs from 'node:fs';
+
+    const data = await getIabTaxonomies();
+
+    fs.writeFileSync('./iab-taxonomies.json', JSON.stringify(data, null, 2));
     ```
 
-1. Install dependencies.
+    The `get` function accepts an object as an argument. The following options are available:
 
-    ```sh
-    npm install
+    | Option | Description | Default |
+    |--------|-------------|---------|
+    | param0 | Options for the `get` function | {} |
+    | param0.gitHubVersion | Version of the GitHub REST API | '2022-11-28'|
+    | param0.repo | The repository name | 'Taxonomies'|
+    | param0.owner | The owner of the repository | 'InteractiveAdvertisingBureau'|
+
+
+    If no arguments are provided, the defaults are used:
+
+    [src/index.js](src/index.js)
+
+    ```javascript
+    async function get({
+      gitHubVersion = '2022-11-28',
+      repo = 'Taxonomies',
+      owner = 'InteractiveAdvertisingBureau'
+    } = {}) {
+      // ...
+    }
     ```
 
-3. Run the main script.
+1. Inspect the downloaded data.
 
-    ```sh
-    node index.js
-    ```
+    The downloaded content will be converted into a JSON file, which has the following structure:
 
-4. Inspect the downloaded data under the [data](./data) folder.
-
-    The downloaded content will be converted into JSON and saved in a `data/iab-taxonomies.json` file, which has the following structure:
+    `iab-taxonomies.json`
 
     ```json
     {
@@ -102,21 +121,18 @@ This repository provides a script with which you can monitor changes in the IAB 
 
     Note that there could be multiple folders (currently four), multiple `.tsv` files in a folder, and multiple versions of a `.tsv` file when new commits are posted. The script will always download the latest commit, but it won't remove the older ones from the existing data, so you can compare with the previous versions. 
 
-    If a new commit has been detected since the last download, the corresponding `.tsv` file will be saved under respective `data/<folder-name>`, following the original repository structure:
+    You can sort, filter, or modify the data according to your needs. You can also use the download links to download the data directly from GitHub.
 
-    `data`
+> GitHub applies rather strict [Rate limits for its REST API](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28). If you decide to develop this package further, you might want to consider forking the Taxonomies repository as and authenticate GitHub API requests sent to your fork, which should allow for a higher rate limit.
 
-    ```sh
-    ├── Ad Product Taxonomies
-    │   ├── Ad Product Taxonomy 1.0.tsv
-    │   ├── Ad Product Taxonomy 1.1.tsv
-    |   └──...
-    ├── Audience Taxonomies
-    │   ├── Audience Taxonomy 1.0.tsv
-    │   └──...
-    |──...
-    ```
+## Examples
 
-    > Currently, the original taxonomy files are provided with CRLF line endings, but in the repository they are saved with LF endings. Thus, the downloaded files might appear modified in the file system depending on your IDE and Git settings even if there is no changes in the actual data and in the [iab-taxonomies.json](data\iab-taxonomies.json) file.
+This repository contains an example script that uses the local copy of the package to download the latest version of the IAB Taxonomies. You can find it under [examples/get-iab-taxonomies](examples/get-iab-taxonomies) folder:
 
-> Note: GitHub applies rather strict [Rate limits for its REST API](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28). If you decide to develop this script further, you might want to consider forking the Taxonomies repository as well and authenticate GitHub API requests sent to your fork, which should allow for a higher rate limit.
+```sh
+cd examples/get-iab-taxonomies
+```
+
+## License
+
+[MIT](LICENSE)

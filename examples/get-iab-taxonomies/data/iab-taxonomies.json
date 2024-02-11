@@ -3,6 +3,7 @@
     "Ad Product Taxonomies/Ad Product Taxonomy 1.0.tsv": {
       "4c7aed478e320fffd68bba3f708ec86f608c8d59": {
         "date": "2023-08-01T14:29:18Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Ad%20Product%20Taxonomies/Ad%20Product%20Taxonomy%201.0.tsv",
         "records": [
           [
             "Unique ID",
@@ -8650,6 +8651,7 @@
     "Ad Product Taxonomies/Ad Product Taxonomy 1.1.tsv": {
       "608d6d35992f086d2a564df63f9e4c825bfadc6d": {
         "date": "2023-08-01T14:31:48Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Ad%20Product%20Taxonomies/Ad%20Product%20Taxonomy%201.1.tsv",
         "records": [
           [
             "Unique ID",
@@ -17307,6 +17309,7 @@
     "Ad Product Taxonomies/Ad Product Taxonomy 2.0.tsv": {
       "d9668c6594b71ccff1fcef7bcc8cb727717acebb": {
         "date": "2023-10-18T14:00:19Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Ad%20Product%20Taxonomies/Ad%20Product%20Taxonomy%202.0.tsv",
         "records": [
           [
             "Unique ID",
@@ -21988,6 +21991,7 @@
     "Audience Taxonomies/Audience Taxonomy 1.0.tsv": {
       "80765cceb50c6309563807a89c08b32b942c931c": {
         "date": "2023-08-01T17:56:36Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Audience%20Taxonomies/Audience%20Taxonomy%201.0.tsv",
         "records": [
           [
             "",
@@ -43835,6 +43839,7 @@
     "Audience Taxonomies/Audience Taxonomy 1.1.tsv": {
       "776766ccde2c716b85e2713b0c17ef408cb0076c": {
         "date": "2023-10-11T15:06:11Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Audience%20Taxonomies/Audience%20Taxonomy%201.1.tsv",
         "records": [
           [
             "",
@@ -64111,6 +64116,7 @@
     "Content Taxonomies/Content Taxonomy 1.0.tsv": {
       "f69c894ce7c2a4b0daef88bed548679329eb2017": {
         "date": "2023-08-01T15:06:30Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Content%20Taxonomies/Content%20Taxonomy%201.0.tsv",
         "records": [
           [
             "IAB Code",
@@ -66083,6 +66089,7 @@
     "Content Taxonomies/Content Taxonomy 2.0.tsv": {
       "76c99a3cb09f221ba10765fd857b2b280ea6f873": {
         "date": "2023-08-01T14:59:45Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Content%20Taxonomies/Content%20Taxonomy%202.0.tsv",
         "records": [
           [
             "New Relational ID System",
@@ -76728,6 +76735,7 @@
     "Content Taxonomies/Content Taxonomy 2.1.tsv": {
       "33592f265a0ef7b707daa94848738bd236d2b97b": {
         "date": "2023-08-01T17:39:10Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Content%20Taxonomies/Content%20Taxonomy%202.1.tsv",
         "records": [
           [
             "Relational ID System",
@@ -88555,6 +88563,7 @@
     "Content Taxonomies/Content Taxonomy 2.2.tsv": {
       "206018a9a66cd5dec5fa6422f1eba61e7277e0fe": {
         "date": "2023-08-01T14:56:56Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Content%20Taxonomies/Content%20Taxonomy%202.2.tsv",
         "records": [
           [
             "Relational ID System",
@@ -100552,6 +100561,7 @@
     "Content Taxonomies/Content Taxonomy 3.0 Descriptive Vectors.tsv": {
       "9a51e8a4090420698c6e7ed2fc46c5b37f333366": {
         "date": "2023-11-14T18:09:13Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Content%20Taxonomies/Content%20Taxonomy%203.0%20Descriptive%20Vectors.tsv",
         "records": [
           [
             "Relational ID System",
@@ -101049,6 +101059,7 @@
     "Content Taxonomies/Content Taxonomy 3.0.tsv": {
       "6d7d0b73e1e0925eafe0558a41c709853d176f03": {
         "date": "2023-08-01T14:45:06Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Content%20Taxonomies/Content%20Taxonomy%203.0.tsv",
         "records": [
           [
             "Relational ID System",
@@ -108108,6 +108119,7 @@
     "Taxonomy Mappings/Ad Product 2.0 to 1.1.tsv": {
       "62ca165bc88327e0dbe0e3eeb241d72b3b57145b": {
         "date": "2023-08-22T18:48:52Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Taxonomy%20Mappings/Ad%20Product%202.0%20to%201.1.tsv",
         "records": [
           [
             "Ad Product 2.0",
@@ -114352,6 +114364,7 @@
     "Taxonomy Mappings/Content 1.0 to Ad Product 2.0.tsv": {
       "42fa41f398dd9826c241a9fbb24525e12c7f0c1a": {
         "date": "2023-11-01T14:02:47Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Taxonomy%20Mappings/Content%201.0%20to%20Ad%20Product%202.0.tsv",
         "records": [
           [
             "Content Taxonomy 1.0 Unique ID",
@@ -117896,6 +117909,7 @@
     "Taxonomy Mappings/Content 2.0 to Content 2.1.tsv": {
       "737e7b88fe47321cd4f5416ccf5424fcdf31e7db": {
         "date": "2023-08-01T17:36:25Z",
+        "download_url": "https://raw.githubusercontent.com/InteractiveAdvertisingBureau/Taxonomies/main/Taxonomy%20Mappings/Content%202.0%20to%20Content%202.1.tsv",
         "records": [
           [
             "New Taxonomy ID",
